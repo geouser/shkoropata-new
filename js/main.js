@@ -86,6 +86,25 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('#mix-gallery').mixItUp({
+      load: {
+        sort: 'order:asc'
+      },
+        animation: {
+        effects: 'fade rotateZ(-180deg)',
+        duration: 700
+      },
+      selectors: {
+        target: '.item.thumb',
+        filter: '.filter-btn'
+      },
+      callbacks: {
+        onMixEnd: function(state){
+          console.log(state)
+        }
+      }
+    });
+
 
     /*---------------------------
                                   Fancybox
@@ -94,6 +113,10 @@ jQuery(document).ready(function($) {
         
     });
 
+    $('.offer--slider').slick({
+        fade: true,
+        speed: 900
+    });
 
     /**
      *
