@@ -1188,7 +1188,7 @@ to{opacity:1}
 .navbar.fixed .dropdown-menu,
 .navbar .dropdown-menu{background:none}
 .navbar .navbar-brand,
-.navbar.fixed .navbar-brand{padding-top:25px}
+.navbar.fixed .navbar-brand{padding-top:0px}
 .navbar.fixed .navbar-brand img{height:25px !important;width:inherit !important;}
 .navbar.fixed .navbar-nav > li > a{padding:30px 14px}
 .navbar .container,
@@ -1241,4 +1241,10 @@ section.inner{padding-top:30px;padding-bottom:30px;}
 
 .features li:nth-child(even) {  
     background-color: rgb(245, 245, 245);
+}
+.navbar-brand {
+    padding-top: 12px;
+}
+.navbar-brand img {
+    height: 55px;
 }
