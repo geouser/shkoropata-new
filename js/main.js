@@ -115,7 +115,8 @@ jQuery(document).ready(function($) {
 
     $('.offer--slider').slick({
         fade: true,
-        speed: 900
+        speed: 1400,
+        autoplay: true
     });
 
     /**
