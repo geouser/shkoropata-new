@@ -30,7 +30,7 @@
 	width: 40px
 	height: 40px
 	z-index: 10
-	background: rgba(0,0,0,0.45)
+	background: rgba(0, 0, 0, 0.8)
 	-webkit-border-radius: 2px
 	border-radius: 2px
 	background-repeat: no-repeat
@@ -68,7 +68,22 @@
 	left: 0
 	background-image: url("../images/left-arrow.svg")
 
+.slick-dots 
+    bottom: -40px
+    margin: 0 !important 
 
+.slick-dots li:before
+    display: none !important
+    
+.slick-dots li button:before
+    color: #FFF 
+    font-size: 12px 
+    opacity: .6 
+    
+.slick-dots li.slick-active button:before
+    color: #FFF
+    opacity: 1  
+    
 .input.file
     position: relative
     padding: 0!important

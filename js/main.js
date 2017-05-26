@@ -113,11 +113,22 @@ jQuery(document).ready(function($) {
         
     });
 
-    $('.offer--slider').slick({
+    $('.offer--slider, .testimonials .panel-container').slick({
         fade: true,
         speed: 1400,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 6000,
+        pauseOnFocus: false,
+        pauseOnHover: false
     });
+
+    $('#testimonials .panel-container').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        autoplaySpeed: 6000
+    });
+
 
     /**
      *
