@@ -1389,6 +1389,23 @@ section.inner{padding-top:30px;padding-bottom:30px;}
     margin-right: -15px;
 }
 
+@media (max-height: 570px) {
+    .navbar .navbar-collapse {
+        height: 400px;
+        overflow: auto;
+        max-height: 100vh;
+    }
+}
+@media (max-height: 500px) {
+    .navbar .navbar-collapse {
+        height: 306px;
+    }
+}
+@media (max-height: 440px) {
+    .navbar .navbar-collapse {
+        height: 250px;
+    }
+}
 @media (max-width: 500px) {
     .post-gallery-wrapper {
         margin: 0 -10px 20px;
