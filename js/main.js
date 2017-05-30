@@ -56,10 +56,8 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   MENU TOGGLE
     ---------------------------*/
-    $('.js-toggle-menu').on('click', function(event) {
-        event.preventDefault();
-        $(this).toggleClass('is-active');
-        $(this).siblings('header').toggleClass('open');
+    $('.responsive-menu').on('click', function() {
+        $('.navbar').toggleClass('opened');
     });
 
 
